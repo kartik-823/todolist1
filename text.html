@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <nav class="navbar">
+        <div class="nav-title">My Todo List</div>
+        <button id="loginBtn" class="login-btn">Login</button>
+    </nav>
+
+    <!-- Main todo list container -->
+    <div class="container">
+        <div class="todo-app">
+            <h1>📝 Task List</h1>
+            
+            <!-- Input form for new tasks -->
+            <form id="todoForm">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="Enter your task..."
+                    required
+                >
+                <button type="submit">Add Task</button>
+            </form>
+
+            <!-- List of tasks -->
+            <ul id="taskList" class="task-list">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
